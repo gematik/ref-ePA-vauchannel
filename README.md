@@ -1,4 +1,4 @@
-# Basismodul VAU-Kanal, Version 1.3.7
+# Basismodul VAU-Kanal, Version 1.3.8
 
 ## Überblick
 
@@ -49,7 +49,7 @@ mvn clean install
 Das Ergebnis des Builds sollte etwa so aussehen:
 ```
 [INFO] ------------------------------------------------------------
-[INFO] Reactor Summary for vauchannel 1.3.6:
+[INFO] Reactor Summary for vauchannel 1.3.8:
 [INFO]
 [INFO] vauchannel ............................. SUCCESS [  0.256 s]
 [INFO] vauchannel-contract-2-java ............. SUCCESS [  2.333 s]
@@ -66,7 +66,7 @@ Das Ergebnis des Builds sollte etwa so aussehen:
 Den Server starten 
 ```
 cd vauchannel-server/target
-java -jar vauchannel-server-1.3.7.jar
+java -jar vauchannel-server-1.3.8.jar
 ```
 und vom Client aus Integrationstests ausführen
 ```
@@ -76,6 +76,9 @@ mvn verify -Ptest
 
 
 ## Release-Notes
+
+### V1.3.8, 2021.03.15
+Interne Anpassungen für die Veröffentlichung über Maven Central.
 
 ### V1.3.7, 2021.03.12
 Die Generierung der OCSPResponse wurde gemäß Anforderung GS-A_4693-01 [gemSpec_PKI] um die OCSP-Extension "certHash" erweitert. \

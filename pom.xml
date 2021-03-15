@@ -20,7 +20,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>de.gematik.ti</groupId>
-    <version>1.3.7</version>
+    <version>1.3.8</version>
     <artifactId>vauchannel</artifactId>
     <name>vauchannel</name>
     <packaging>pom</packaging>
