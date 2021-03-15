@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "VAUServerHelloSchema",
+  "type": "object",
+  "properties": {
+    "MessageType": {
+      "type": "string",
+      "enum": [
+        "VAUServerHello"
+      ]
+    },
+    "Data": {
+      "type": "string",
+      "maxLength": 10000,
+      "pattern": "[A-Za-z0-9+=]"
+    },
+    "Signature": {
+      "type": "string",
+      "maxLength": 10000,
+      "pattern": "[A-Za-z0-9+=]"
+    },
+    "Certificate": {
+      "type": "string",
+      "maxLength": 10000,
+      "pattern": "[A-Za-z0-9+=]"
+    },
+    "OCSPResponse": {
+      "type": "string",
+      "maxLength": 10000,
+      "pattern": "[A-Za-z0-9+=]"
+    }
+  },
+  "required": [
+    "MessageType",
+    "Data",
+    "Signature",
+    "Certificate",
+    "OCSPResponse"
+  ],
+  "additionalProperties": false
+}

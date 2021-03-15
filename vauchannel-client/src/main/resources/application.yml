@@ -1,0 +1,7 @@
+logging.file:
+  name: logs/vauchannel-client.log
+  max-history: 30
+  max-size: 100MB
+spring:
+  main:
+    web-application-type: none

@@ -1,0 +1,9 @@
+.idea/
+*.iml
+**/target
+**/logs
+Jenkinsfile
+Jenkinsfile-GitHub-Release
+Jenkinsfile-Maven-Central-Release
+Jenkinsfile-Release
+vauchannel-zip/

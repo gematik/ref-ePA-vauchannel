@@ -1,0 +1,44 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "VAUServerHelloDataSchema",
+  "type": "object",
+  "properties": {
+    "DataType": {
+      "type": "string",
+      "enum": [
+        "VAUServerHelloData"
+      ]
+    },
+    "CipherConfiguration": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "AES-256-GCM-BrainpoolP256r1-SHA-256"
+        ]
+      }
+    },
+    "VAUClientHelloDataHash": {
+      "type": "string",
+      "maxLength": 10000,
+      "pattern": "[A-Za-z0-9+=]"
+    },
+    "PublicKey": {
+      "type": "string",
+      "maxLength": 10000,
+      "pattern": "[A-Za-z0-9+=]"
+    },
+    "CertificateHash": {
+      "type": "string",
+      "maxLength": 10000,
+      "pattern": "[A-Za-z0-9+=]"
+    }
+  },
+  "required": [
+    "DataType",
+    "CipherConfiguration",
+    "VAUClientHelloDataHash",
+    "PublicKey"
+  ],
+  "additionalProperties": false
+}

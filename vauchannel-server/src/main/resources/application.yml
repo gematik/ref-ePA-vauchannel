@@ -1,0 +1,11 @@
+logging:
+  file:
+    name: logs/vauchannel-server.log
+    max-history: 30
+    max-size: 100MB
+  level:
+    de: INFO
+cxf:
+  path: /services
+server:
+  port: 9094

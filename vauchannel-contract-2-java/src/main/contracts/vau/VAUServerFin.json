@@ -1,0 +1,23 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "VAUServerFinSchema",
+  "type": "object",
+  "properties": {
+    "MessageType": {
+      "type": "string",
+      "enum": [
+        "VAUServerFin"
+      ]
+    },
+    "FinishedData": {
+      "type": "string",
+      "maxLength": 10000,
+      "pattern": "[A-Za-z0-9+=]"
+    }
+  },
+  "required": [
+    "MessageType",
+    "FinishedData"
+  ],
+  "additionalProperties": false
+}

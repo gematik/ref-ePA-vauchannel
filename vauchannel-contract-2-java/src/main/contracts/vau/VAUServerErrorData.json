@@ -1,0 +1,28 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "VAUServerErrorDataSchema",
+  "type": "object",
+  "properties": {
+    "DataType": {
+      "type": "string",
+      "enum": [
+        "VAUServerErrorData"
+      ]
+    },
+    "Data": {
+      "type": "string",
+      "pattern": "[A-Za-z0-9+=]",
+      "maxLength": 10000
+    },
+    "Time": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "required": [
+    "DataType",
+    "Data",
+    "Time"
+  ],
+  "additionalProperties": false
+}

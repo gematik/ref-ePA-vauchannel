@@ -1,0 +1,43 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "VAUClientHelloDataSchema",
+  "type": "object",
+  "properties": {
+    "DataType": {
+      "type": "string",
+      "enum": [
+        "VAUClientHelloData"
+      ]
+    },
+    "CipherConfiguration": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "enum": [
+          "AES-256-GCM-BrainpoolP256r1-SHA-256"
+        ]
+      }
+    },
+    "PublicKey": {
+      "type": "string",
+      "maxLength": 10000,
+      "pattern": "[A-Za-z0-9+=]"
+    },
+    "AuthorizationAssertion": {
+      "type": "string",
+      "maxLength": 10000,
+      "pattern": "[A-Za-z0-9+=]"
+    },
+    "CertificateHash": {
+      "type": "string",
+      "maxLength": 10000,
+      "pattern": "[A-Za-z0-9+=]"
+    }
+  },
+  "required": [
+    "DataType",
+    "CipherConfiguration",
+    "PublicKey"
+  ],
+  "additionalProperties": false
+}
