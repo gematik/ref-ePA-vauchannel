@@ -77,6 +77,9 @@ mvn verify -Ptest
 
 ## Release-Notes
 
+### V1.3.9, 2021.12.20
+Upgrade von log4j
+
 ### V1.3.8, 2021.03.15
 Interne Anpassungen für die Veröffentlichung über Maven Central.
 
