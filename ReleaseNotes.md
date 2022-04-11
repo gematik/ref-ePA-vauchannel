@@ -1,3 +1,6 @@
+# Release 1.4.0
+Update von Dependencies
+
 # Release 1.3.10
 Interne Anpassungen für die Veröffentlichung über Maven Central.
 
